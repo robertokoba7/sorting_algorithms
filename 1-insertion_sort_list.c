@@ -5,7 +5,6 @@
  * the insertion sort algorithm
  *
  * @list: list to be sorted
- * Return: void
  */
 void insertion_sort_list(listint_t **list)
 {
@@ -17,7 +16,7 @@ void insertion_sort_list(listint_t **list)
 	node = (*list)->next;
 	while (node)
 	{
-		while ((node->prev) && (node->prev->n > node->))
+		while ((node->prev) && (node->prev->n > node->n))
 		{
 			node = swap_node(node, list);
 			print_list(*list);
