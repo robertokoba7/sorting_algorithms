@@ -1,7 +1,6 @@
 #ifndef DECK_H
 #define DECK_H
 
-#include <stdlib.h>
 
 /**
  * enum kind_e - Enumeration of card suits.
@@ -29,7 +28,7 @@ typedef struct card_s
 {
 	const char *value;
 	const kind_t kind;
-}
+} card_t;
 
 /**
  * struct deck_node_s - Deck of card
